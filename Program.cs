@@ -6,7 +6,10 @@
 // Создать методы на заполнение массива с размером i, 
 // заполнение с клавиатуры, так же предусмотреть вывод его на 
 // Задача 2
-// Метод, изменяющий свой аргумент
+// Написать методы нахождения самого большого и самого маленького слова,
+// передаваемых в метод параметрами
+using System.Security.Cryptography.X509Certificates;
+
 class Program
 {
     static void changeNum(ref int n)
@@ -19,6 +22,10 @@ class Program
         b = a * a;
         c = a * a * a;
         return i;
+        void show()
+    {
+        Console.WriteLine("Вывод на экран");
+    }
 
     }
     static void Main()
@@ -32,11 +39,11 @@ class Program
             //OUT
             int i;
             double c, b, a = 5.5;
-            i=test(a, out b, out c);
+            i = test(a, out b, out c);
             Console.WriteLine("Оригинальная переменная: {0}\n", a);
             Console.WriteLine("Оригинальная переменная int: {0}\n", i);
-            Console.WriteLine("a^2 : {0}\n",b);
-            Console.WriteLine("a^3 : {0}\n",c);
+            Console.WriteLine("a^2 : {0}\n", b);
+            Console.WriteLine("a^3 : {0}\n", c);
         }
     }
 }
